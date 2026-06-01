@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Codeer - A nature-inspired, privacy-centric VS Code fork with low eye strain, optimized resource footprint, and zero telemetry.">
+  <title>Codeer | The nature-inspired VS Code fork</title>
+  <link rel="shortcut icon" href="code.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="header">
+    <a href="#" class="logo-container" id="header-logo-link">
+      <!-- Glowing mini code.png logo -->
+      <img src="code.png" alt="Codeer Logo">
+      <span class="site-title">Codeer</span>
+    </a>
+    
+    <nav class="nav-menu">
+      <a href="#" class="nav-link js-open-download" id="nav-download-link">Download</a>
+      <a href="https://github.com/davidkivuyo/codeer" target="_blank" rel="noopener noreferrer" class="nav-btn-star" id="nav-star-link">
+        <!-- Github Star SVG Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        Star on GitHub
+      </a>
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <button class="menu-toggle js-open-download" aria-label="Menu Toggle" id="mobile-menu-btn">
+      ☰
+    </button>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <main>
+    <section class="hero" id="hero-section">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span></span> 100% Compatible with VS Code Extensions
+        </div>
+        <h2 class="hero-title">
+          Code Editor Built <br>
+          For <span class="gradient">Natural Flow.</span>
+        </h2>
+        <p class="hero-subtitle">
+          Codeer is a privacy-centric VS Code fork loaded with pre-installed green nature themes, intelligent memory optimization, and zero telemetry. Code inside a design built to soothe the developer's eyes.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-download-orange js-open-download" id="hero-btn-download">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg>
+            <span>Download for Desktop</span>
+          </button>
+          <a href="#editor-preview" class="btn-secondary" id="hero-btn-demo">
+            Interactive Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="visual-glow-ring"></div>
+        <img class="logo-leaf-large" src="code.png" alt="Codeer Logo" id="hero-leaf-logo">
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CODE PREVIEW MOCKUP SECTION
+         ========================================================================== -->
+    <section class="preview-section" id="editor-preview">
+      <div class="section-header">
+        <span class="hero-tag"><span></span>Interactive Workspace Preview</span>
+        <h2 class="section-title">A Beautiful Canvas for Code</h2>
+        <p class="section-subtitle">Switch themes, browse sample files, or run the console output below to experience Codeer's integrated environment.</p>
+      </div>
+      
+      <div class="editor-frame theme-forest js-editor-frame" id="codeer-editor-sandbox">
+        <!-- Editor Frame Header Bar -->
+        <div class="editor-titlebar">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="window-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>index.js — Codeer Editor</span>
+          </div>
+          <div class="editor-controls">
+            <div class="theme-selector-container">
+              <span class="theme-label">Theme:</span>
+              <select class="theme-dropdown js-theme-dropdown" aria-label="Editor Theme Selector">
+                <option value="forest">Forest Dark (Default)</option>
+                <option value="emerald">Emerald Night</option>
+                <option value="velvet">Velvet Dark</option>
+                <option value="leaf-light">Leaf Light</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Editor Main Work Body -->
+        <div class="editor-body">
+          <!-- Sidebar Actions Column -->
+          <div class="editor-sidebar">
+            <div class="sidebar-top">
+              <div class="sidebar-icon active" title="Explorer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              </div>
+              <div class="sidebar-icon" title="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <div class="sidebar-icon" title="Source Control">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><line x1="6" y1="9" x2="6" y2="21"></line><path d="M9 18a3 3 0 0 1-3-3V9"></path></svg>
+              </div>
+              <div class="sidebar-icon" title="Extensions">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <div class="sidebar-icon" title="Settings">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+            </div>
+          </div>
+          
+          <!-- File Explorer Panel -->
+          <div class="editor-explorer">
+            <div class="explorer-header">Workspace</div>
+            <ul class="file-list">
+              <li class="file-item active js-file-item" data-file="index.js" id="explorer-index-js">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                index.js
+              </li>
+              <li class="file-item js-file-item" data-file="styles.css" id="explorer-styles-css">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                styles.css
+              </li>
+              <li class="file-item js-file-item" data-file="features.md" id="explorer-features-md">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                features.md
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Workspace Display Area -->
+          <div class="editor-workspace">
+            <div class="workspace-tabs">
+              <div class="tab active js-tab-item" data-file="index.js" id="tab-index-js">
+                <span>index.js</span>
+                <span class="tab-close">&times;</span>
+              </div>
+              <div class="tab js-tab-item" data-file="styles.css" id="tab-styles-css">
+                <span>styles.css</span>
+                <span class="tab-close">&times;</span>
+              </div>
+              <div class="tab js-tab-item" data-file="features.md" id="tab-features-md">
+                <span>features.md</span>
+                <span class="tab-close">&times;</span>
+              </div>
+            </div>
+            
+            <div class="code-area">
+              <div class="line-numbers js-line-numbers">
+                <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+              </div>
+              <pre class="code-content js-code-content" id="editor-preformatted-code"><span class="comment">// Welcome to Codeer - The Premium VS Code Fork</span>
+<span class="keyword">import</span> { <span class="class">Codeer</span>, <span class="variable">Theme</span> } <span class="keyword">from</span> <span class="string">'codeer-core'</span>;
+
+<span class="keyword">const</span> <span class="variable">editor</span> = <span class="keyword">new</span> <span class="class">Codeer</span>({
+  theme: <span class="variable">Theme</span>.<span class="function">ForestDark</span>,
+  extensions: [<span class="string">'copilot'</span>, <span class="string">'git-lens'</span>],
+  performance: <span class="string">'blazing-fast'</span>
+});
+
+<span class="comment">// Codeer runs all your favorite VS Code extensions</span>
+<span class="variable">editor</span>.<span class="function">on</span>(<span class="string">'load'</span>, () =&gt; {
+  <span class="variable">console</span>.<span class="function">log</span>(<span class="string">'🌿 Codeer is ready. Happy coding!'</span>);
+});
+
+<span class="variable">editor</span>.<span class="function">run</span>();</pre>
+            </div>
+            
+            <!-- Codeer Terminal Output System -->
+            <div class="terminal-panel">
+              <div class="terminal-header">
+                <div class="terminal-tabs">
+                  <span class="terminal-tab-title">Terminal</span>
+                </div>
+                <div class="terminal-actions">
+                  <button class="btn-terminal-run js-btn-run" id="btn-run-code">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px;transform:rotate(90deg);"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Run
+                  </button>
+                </div>
+              </div>
+              <div class="terminal-body js-terminal-body">
+                <div class="terminal-line cmd">$ node index.js</div>
+                <div class="terminal-line success">🌿 Codeer is ready. Happy coding!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURES SECTION
+         ========================================================================== -->
+    <section class="features" id="features-section">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="feature-title">Blazing Performance</h3>
+          <p class="feature-description">Built with a custom lightweight rendering system, reducing overall memory usage by up to 40% compared to standard configurations. Start typing instantly.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3 class="feature-title">100% Extension Support</h3>
+          <p class="feature-description">Fully compatible with all VS Code features, configurations, and the full catalog of extensions on the marketplace. Transition smoothly with no learning curve.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="feature-title">Absolute Privacy</h3>
+          <p class="feature-description">Zero telemetry out of the box. Your code, keystrokes, extension list, and environment configurations stay completely private inside your local storage.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       DOWNLOAD MODAL OVERLAY
+       ========================================================================== -->
+  <div class="modal-overlay js-modal-overlay" id="download-modal">
+    <div class="modal-card">
+      <button class="modal-close js-close-modal" aria-label="Close Modal" id="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Get <span>Codeer</span></h3>
+      <p class="modal-subtitle">Available for windows and linux. Download the latest stable build v1.0.1.</p>
+      
+      <div class="download-options">
+        <!-- Windows Option -->
+        <a href="https://github.com/davidkivuyo/codeer/releases/download/v1.0.1/Codeer-v1.0.1-windows-x64.zip" download>
+            <button class="download-option-btn" id="dl-option-windows">
+          <div class="option-left">
+            <div class="option-icon">
+              <!-- Windows OS SVG Icon -->
+             <i class="fa-brands fa-windows"></i>
+            </div>
+            <div class="option-details">
+              <span class="option-name">For Windows</span>
+              <span class="option-meta">A Windows 10, 11 zip file just unzip it and launch the codeer app</span>
+            </div>
+          </div>
+          <span class="option-arrow">&rarr;</span>
+        </button>
+        </a>
+        
+        <!-- Linux Option -->
+        <a href="">
+            <button class="download-option-btn" id="dl-option-linux">
+          <div class="option-left">
+            <div class="option-icon">
+              <!-- Linux Kernel Tux SVG Icon -->
+              <i class="fa-brands fa-linux"></i>
+            </div>
+            <div class="option-details">
+              <span class="option-name">For Linux</span>
+              <span class="option-meta">for Debian, RedHat based and other distributions untar the tar.gz file and launch the app</span>
+            </div>
+          </div>
+          <span class="option-arrow">&rarr;</span>
+        </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="footer-section">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <!-- Miniature leaf logo in footer -->
+        <img src="code.png" alt="Codeer Logo" class="footer-brand-logo">
+        <span class="footer-brand-title">Codeer</span>
+      </div>
+      
+      <div class="footer-links">
+        <a href="https://github.com/davidkivuyo/codeer" target="_blank" rel="noopener noreferrer" class="footer-link" id="footer-github-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/larabal/" target="_blank" rel="noopener noreferrer" class="footer-link" id="footer-linkedin-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <div class="footer-bottom">
+      <p class="copyright-notice" id="copyright-microsoft-notice">
+        &copy; 2026 Codeer Project. All rights reserved. <br>
+        <strong>Visual Studio Code</strong> and <strong>VS Code</strong> are registered trademarks of <strong>Microsoft Corporation</strong>. Codeer is a community-driven open source fork and is not affiliated with, endorsed by, or associated with Microsoft Corporation.
+      </p>
+      <!-- Italic responsive h1 title at the very bottom of the footer -->
+      <h1 class="footer-large-title" id="footer-responsive-title">Codeer</h1>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
