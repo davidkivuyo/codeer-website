@@ -6,4 +6,7 @@ available at [codeer.com](https://codeer.larason.space)
 * gitlab [glb.com/dk/codeer](https://gitlab.com/davidkivuyo123/codeer)
 
 # you have the rights to know this
-the website is vibe coded🤖 new antigravity cli
+the website is vibe coded🤖
+
+# todo
+add the automatic os-detect for the download button
