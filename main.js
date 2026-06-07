@@ -51,7 +51,6 @@ function initModal() {
   modalOverlay.addEventListener('click', (e) => {
     if (e.target === modalOverlay) closeModal();
   });
-
   // Handle ESC key to close modal
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
@@ -291,4 +290,19 @@ function initThemeToggle() {
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
   });
+}
+
+
+// OS-detect funtionality
+let osFile = document.getElementById("os");
+if(navigator.userAgent.indexOf("Linux")!==-1){
+  osFile.innerHTML= "Download for Linux";
+  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.1/Codeer-v1.0.1-linux-x64.tar.gz";
+
+}else if(navigator.userAgent.indexOf("Win")!==-1){
+  osFile.innerHTML= "Download for Windows";
+  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.1/Codeer-v1.0.1-linux-x64.tar.gz";
+  
+}else{
+   osFile.innerHTML= "Requires windows or linux OS";
 }
