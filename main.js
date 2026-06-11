@@ -295,14 +295,23 @@ function initThemeToggle() {
 
 // OS-detect funtionality
 let osFile = document.getElementById("os");
-if(navigator.userAgent.indexOf("Linux")!==-1){
-  osFile.innerHTML= "Download for Linux";
-  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.1/Codeer-v1.0.1-linux-x64.tar.gz";
+const userAgent = navigator.userAgent.toLowerCase();
+if(userAgent.indexOf("android")!==-1){
+  osFile.innerHTML= "Download latest release";
+ 
+}else if(userAgent.indexOf("iphone")!==-1){
+  osFile.innerHTML= "Download latest v1.0.2";
 
-}else if(navigator.userAgent.indexOf("Win")!==-1){
+}else if(userAgent.indexOf("linux")!==-1){
+  osFile.innerHTML= "Download for Linux";
+  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.2/Codeer-v1.0.2-linux-x64.zip";
+  osFile.download;
+
+}else if(userAgent.indexOf("win")!==-1){
   osFile.innerHTML= "Download for Windows";
-  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.1/Codeer-v1.0.1-linux-x64.tar.gz";
+  osFile.href = "https://github.com/davidkivuyo/codeer/releases/download/v1.0.2/codeer-v1.0.2-windows-x64.zip";
+  osFile.download;
   
 }else{
-   osFile.innerHTML= "Requires windows or linux OS";
+   osFile.innerHTML= "Requires windows or linux";
 }
