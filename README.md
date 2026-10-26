@@ -1,5 +1,5 @@
 # the website for the Codeer editor
-available at [codeer.com](https://codeer.larason.space)
+available at [codeer.com](https://codeer.larason.space) -CURRENTLY NOT AVAILABLE
 
 # looking for the editor repository
 * github [gh.com/dk/codeer](https://github.com/davidkivuyo/codeer)
